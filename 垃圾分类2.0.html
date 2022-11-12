@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: rgb(138, 168, 166);
+		}
+
+		.beijing-1 {
+			background: url("img/bj-1.png");
+			background-size: cover;
+			width: 340px;
+			height: 680px;
+			margin: 0 auto;
+		}
+
+		.defen {
+			width: 120px;
+			height: 37px;
+			font-size: 20px;
+			line-height: 32px;
+			background: url("img/bj-2.png");
+			background-size: cover;
+			margin-left: 20px;
+			margin-top: 20px;
+			float: left;
+		}
+
+		.shijian {
+			height: 37px;
+			font-size: 32px;
+			line-height: 32px;
+			margin-left: 140px;
+			margin-top: 20px;
+			float: left;
+		}
+
+		.mingcheng {
+			width: 130px;
+			height: 130px;
+			background: url("img/bj-3.png");
+			background-size: cover;
+			float: left;
+			margin-left: 105px;
+			margin-top: 40px;
+		}
+
+		.mingcheng-1 {
+			width: 130px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 24px;
+			margin-top: 70px;
+			float: left;
+			text-align: center;
+		}
+
+		.laji {
+			width: 110px;
+			height: 60px;
+			float: left;
+			margin-left: 115px;
+			margin-top: 40px;
+		}
+
+		input {
+			width: 60px;
+			height: 60px;
+			margin-left: 25px;
+			display: none;
+		}
+
+		.lajixiang {
+			float: left;
+			margin-top: 120px;
+			width: 340px;
+		}
+
+		.mingcheng-1 {
+			display: none;
+		}
+
+		img {
+			float: left;
+			width: 70px;
+			height: 110px;
+			margin-left: 12px;
+		}
+
+		.chengji {
+			width: 340px;
+			height: 680px;
+			/* background: black ; */
+			/* opacity:0.5; */
+			background: rgba(0, 0, 0, 0.5);
+			margin: 0 auto;
+			display: none;
+		}
+
+		.chengji-1 {
+			width: 300px;
+			height: 360px;
+			background: rgb(138, 168, 166);
+			float: left;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		.chengji-2 {
+			margin-left: 100px;
+			margin-top: 50px;
+			font-size: 22px;
+		}
+
+		.chengji-3 {
+			margin-left: 100px;
+			font-size: 22px;
+		}
+
+		.chengji-4 {
+			width: 120px;
+			height: 37px;
+			font-size: 20px;
+			line-height: 32px;
+			background: url("img/bj-2.png");
+			background-size: cover;
+			margin-left: 110px;
+			margin-top: 10px;
+			border: 0px;
+		}
+
+		.chengji-5 {
+			margin-top: 20px;
+			margin-left: 130px;
+			font-size: 22px;
+		}
+
+		audio {
+			display: none;
+		}
+	</style>
+	<body>
+		<div class="beijing-1">
+			<div id="beijing-2">
+				<div class="defen">
+					<label>得分:</label>
+					<label class="fenshu">0</label>
+				</div>
+
+				<div class="shijian">
+					<label id="miao">0</label>
+				</div>
+
+				<div class="mingcheng">
+					<label class="mingcheng-1" id="mingcheng1" style="display: block;">烟头</label>
+					<label class="mingcheng-1" id="mingcheng2">废电池</label>
+					<label class="mingcheng-1" id="mingcheng3">苹果核</label>
+					<label class="mingcheng-1" id="mingcheng4">空瓶</label>
+					<label class="mingcheng-1" id="mingcheng5">香蕉皮</label>
+					<label class="mingcheng-1" id="mingcheng6">鸡蛋壳</label>
+					<label class="mingcheng-1" id="mingcheng7">烂菜</label>
+					<label class="mingcheng-1" id="mingcheng8">易拉罐</label>
+					<label class="mingcheng-1" id="mingcheng9">废纸</label>
+					<label class="mingcheng-1" id="mingcheng10">螺母</label>
+				</div>
+
+				<div class="laji">
+					<input type="image" id="p1" draggable="true" value="4" src="img/lj-1.png" style="display: block;">
+					<input type="image" id="p2" draggable="true" value="2" src="img/lj-2.png">
+					<input type="image" id="p3" draggable="true" value="3" src="img/lj-3.png">
+					<input type="image" id="p4" draggable="true" value="1" src="img/lj-4.png">
+					<input type="image" id="p5" draggable="true" value="3" src="img/lj-5.png">
+					<input type="image" id="p6" draggable="true" value="3" src="img/lj-6.png">
+					<input type="image" id="p7" draggable="true" value="3" src="img/lj-7.png">
+					<input type="image" id="p8" draggable="true" value="1" src="img/lj-8.png">
+					<input type="image" id="p9" draggable="true" value="4" src="img/lj-9.png">
+					<input type="image" id="p10" draggable="true" value="1" src="img/lj-10.png">
+
+
+				</div>
+
+				<div class="lajixiang">
+					<img id="div1" draggable="false" src="img/ljx-1.png">
+					<img id="div2" draggable="false" src="img/ljx-2.png">
+					<img id="div3" draggable="false" src="img/ljx-3.png">
+					<img id="div4" draggable="false" src="img/ljx-4.png">
+				</div>
+
+				<audio src="se/yinyue-1.ogg" id="music1">
+					<audio src="se/yinyue-2.ogg" id="music2">
+						<audio src="se/yinyue-3.ogg" id="music3">
+
+			</div>
+
+
+			<div class="chengji" id="chengji-1">
+				<div class="chengji-1">
+					<div class="chengji-2">
+						<label>用时:</label>
+						<label id="miao-1">0</label>
+						<label>s</label>
+					</div>
+					<div class="chengji-3">
+						<label>得分:</label>
+						<label id="fenshu-1">0</label>
+						<label>分</label>
+					</div>
+					<div class="chengji-5">
+						<label id="zz-1"></label>
+					</div>
+				</div>
+
+				<button class="chengji-4" type="button" onclick="javascript:location.reload()">再来一次</button>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			var fenshu = document.getElementsByClassName("fenshu");
+			var m = 0;
+			var n = 0;
+			var fs = 0;
+			var fen = 0;
+			var miao = 0;
+
+			// 当拖曳开始时触发
+			document.ondragstart = function(event) {
+				event.dataTransfer.setData('text/html', event.target.id); // 传递id值
+				m = m + 1;
+
+			};
+			// 当源对象悬停在目标元素上方时触发
+			document.ondragover = function(event) {
+				return false;
+			};
+			// 当源对象在目标元素上方释放鼠标时 
+			document.ondrop = function(event) {
+				var id = event.dataTransfer.getData('text/html');
+				var et = event.target.id;
+				var i = 1;
+				if (et == "div1" || et == "div2" || et == "div3" || et == "div4") {
+					event.target.appendChild(document.getElementById(id));
+					document.getElementById("p" + m).style.display = "none";
+					document.getElementById("mingcheng" + m).style.display = "none";
+
+					if (document.getElementById("p" + m).value == "1" && et == "div1") {
+						fs = fs + 10;
+						i = 2;
+						fenshu[0].innerHTML = fs;
+					}
+					if (document.getElementById("p" + m).value == "2" && et == "div2") {
+						fs = fs + 10;
+						i = 2;
+						fenshu[0].innerHTML = fs;
+					}
+					if (document.getElementById("p" + m).value == "3" && et == "div3") {
+						fs = fs + 10;
+						i = 2;
+						fenshu[0].innerHTML = fs;
+					}
+					if (document.getElementById("p" + m).value == "4" && et == "div4") {
+						fs = fs + 10;
+						i = 2;
+						fenshu[0].innerHTML = fs;
+					}
+					if (m == 10) {
+						clearInterval(monitorInterval);
+						document.getElementById("beijing-2").style.display = "none";
+						document.getElementById("chengji-1").style.display = "block";
+						document.getElementById("fenshu-1").innerHTML = fs;
+						i = 3;
+						var mymmusic = document.getElementById("music" + i);
+						mymmusic.play();
+					}
+					if (fs < 60) {
+						document.getElementById("zz-1").innerHTML = "菜鸟";
+					}
+					if (fs < 100 && fs > 50) {
+						document.getElementById("zz-1").innerHTML = "大师";
+					}
+					if (fs == 100) {
+						document.getElementById("zz-1").innerHTML = "王者";
+					}
+					n = m + 1;
+					document.getElementById("p" + n).style.display = "block";
+					document.getElementById("mingcheng" + n).style.display = "block";
+					var mymmusic = document.getElementById("music" + i);
+					mymmusic.play();
+
+				} else {
+					m = m - 1;
+				}
+			};
+
+
+			var monitorInterval = setInterval(function() {
+				myTimer()
+			}, 1000);
+
+			function myTimer() {
+				document.getElementById("miao").innerHTML = miao;
+				document.getElementById("miao-1").innerHTML = miao;
+				miao += 1;
+			}
+		</script>
+	</body>
+</html>
